@@ -1,0 +1,53 @@
+{
+  "name": "ui-build",
+  "version": "1.0.0",
+  "description": "Build use for UI development",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "clean": "rimraf dist",
+    "prod": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
+    "lint": "eslint ./app/**/**.js",
+    "precommit": "cross-env npm run lint",
+    "prepush": "cross-env npm run lint"
+  },
+  "author": "Yaroslav Dvorovenko <yadvorovenko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "copy-webpack-plugin": "^4.3.1",
+    "cross-env": "5.1.2",
+    "extract-text-webpack-plugin": "3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-hot-loader": "4.0.0-beta.1",
+    "react-router-dom": "4.2.2",
+    "webpack": "3.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.1.2",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-react-hmre": "1.1.1",
+    "babel-preset-stage-2": "6.24.1",
+    "css-hot-loader": "^1.3.6",
+    "css-loader": "0.28.8",
+    "eslint": "4.13.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.5.1",
+    "file-loader": "1.1.6",
+    "husky": "0.15.0-beta.2",
+    "node-sass": "^4.7.2",
+    "open-browser-webpack-plugin": "0.0.5",
+    "rimraf": "2.6.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.1",
+    "url-loader": "0.6.2",
+    "webpack-dev-server": "2.9.6"
+  }
+}

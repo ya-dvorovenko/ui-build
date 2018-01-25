@@ -1,0 +1,51 @@
+// Style reset
+*
+  border: 0
+  padding: 0
+  margin: 0
+html, body
+  min-width: 100%
+  min-height: 100%
+body
+  background: #e2e2e2
+ol, ul
+  list-style: none
+a
+  text-decoration: none
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+// Base markup quality diagnostic
+div:empty, span:empty, li:empty, p:empty, td:empty, th:empty
+  padding: 0.5em
+  background: yellow
+*[style], font, center
+  outline: 5px solid red
+*[class=""], *[id=""]
+  outline: 5px dotted red
+img[alt=""]
+  border: 3px dotted red
+img:not([alt])
+  border: 5px solid red
+img[title=""]
+  outline: 3px dotted fuchsia
+img:not([title])
+  outline: 5px solid fuchsia
+
+table:not([summary])
+  outline: 5px solid red
+table[summary=""]
+  outline: 3px dotted red
+
+a[href]:not([title])
+  border: 5px solid red
+a[title=""]
+  outline: 3px dotted red
+a[href=""]
+  background: fuchsia
+
+.image
+  opacity: 1
+  width: 200px
+  height: 200px
