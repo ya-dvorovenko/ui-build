@@ -14,7 +14,6 @@
   "author": "Yaroslav Dvorovenko <yadvorovenko@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "copy-webpack-plugin": "^4.3.1",
     "cross-env": "5.1.2",
     "extract-text-webpack-plugin": "3.0.2",
     "html-webpack-plugin": "^2.30.1",

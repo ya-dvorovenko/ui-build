@@ -1,3 +1,2 @@
-export default class ExampleController {
-
+export default {
 }
